@@ -1,0 +1,10 @@
+<section class="form__section">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput class='input__search' placeholder="User ID" [formControl]='inputControl'>
+    </mat-form-field>
+  </form>
+  <button class='search__buton' mat-button (click)="displayText()">Search</button>
+  <span>{{ text }}</span>
+</section>
+<app-list></app-list>
