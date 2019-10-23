@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { isDevMode } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -7,4 +8,10 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "pagimeterAngular";
+
+  ngOnInit(): void {
+    if (isDevMode()) {
+      console.log("esta em devlopment mode");
+    }
+  }
 }

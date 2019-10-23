@@ -1,0 +1,14 @@
+<section class="row d-flex justify-content-center align-items-center" style='height: 100%'>
+  <form class="d-flex flex-column mr-4">
+    <mat-form-field class="mb-2 justify-content-between">
+      <input matInput class='input__search' placeholder="E-mail" [formControl]='inputControl'>
+    </mat-form-field>
+    <mat-form-field class="mb-2 d-flex justify-content-between">
+      <input matInput placeholder="Password" [formControl]='inputControl'>
+    </mat-form-field>
+    <button type='submit' class='search__buton' mat-button
+      (click)="displayText(); $event.stopPropagation();">Search</button>
+  </form>
+  <a href="http://localhost:5000/auth/google" class="mt-4" style='cursor: pointer'>Login with
+    google</a>
+</section>
